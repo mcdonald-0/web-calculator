@@ -1,3 +1,47 @@
-body {
-	background-color: red;
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+.container {
+	/*padding: 30px;*/
+	/*border: 10px solid black;*/
+}
+
+.row-one {
+	background-color: #282923;
+	/*padding: 30px;*/
+}
+
+.row-one::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.box {
+	float: left;
+	border: 5px solid red;
+	width: ‭33.33333%;
+	padding: 40px;
+}
+
+.one {
+	text-align: center;
+	font-weight: bolder;
+	font-size: 40px;
+}
+
+.two {
+	text-align: center;
+	font-weight: bolder;
+	font-size: 40px;
+}
+
+.three {
+	text-align: center;
+	font-weight: bolder;
+	font-size: 40px;
 }
