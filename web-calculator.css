@@ -16,23 +16,19 @@ html {
 .display {
 	padding: 30px;
 	margin-bottom: 5px;
-	background-color: #505050;
-	border: 5px solid red;
+	background-color: #D3D3D3;
+	border: 5px solid #D3D3D3;
 	border-radius: 10px;
 }
 
-.row-one {
-	
+.display:hover {
+	background-color: #303030;
+	border-color: #AFBBE3;
+	transition: 0.4s;
 }
 
-/*.row-one::after {
-	content: "";
-	display: table;
-	clear: both;
-}
-*/
 .box {
-	border: 3px solid red;
+	border: 3px solid lightgrey;
 	border-radius: 10px;
 	float: left;
 	font-size: 40px;
@@ -45,6 +41,7 @@ html {
 	text-align: center;
 }
 
+/* This is to position the button side by side */
 .one, .four, .seven {
 	margin-right: 2px;
 }
@@ -57,10 +54,75 @@ html {
 	margin-left: 2px;
 }
 
+/* To position the buttons under each other */
 .four, .five, .six {
-	margin-top: 2px;
+	margin-top: 4px;
 }
 
 .seven, .eight, .nine {
-	margin-top: 2px;
+	margin-top: 4px;
 }
+
+.one:hover {
+	background-color: #AFBBE3;
+	border-color: #AFBBE3;
+	color: #303030;
+	transition: 0.4s;
+}
+
+.two:hover {
+	background-color: #AFBBE3;
+	border-color: #AFBBE3;
+	color: #303030;
+	transition: 0.4s;
+}
+
+.three:hover {
+	background-color: #AFBBE3;
+	border-color: #AFBBE3;
+	color: #303030;
+	transition: 0.4s;
+}
+
+.four:hover {
+	background-color: #AFBBE3;
+	border-color: #AFBBE3;
+	color: #303030;
+	transition: 0.4s;
+}
+
+.five:hover {
+	background-color: #AFBBE3;
+	border-color: #AFBBE3;
+	color: #303030;
+	transition: 0.4s;
+}
+
+.six:hover {
+	background-color: #AFBBE3;
+	border-color: #AFBBE3;
+	color: #303030;
+	transition: 0.4s;
+}
+
+.seven:hover {
+	background-color: #AFBBE3;
+	border-color: #AFBBE3;
+	color: #303030;
+	transition: 0.4s;
+}
+
+.eight:hover {
+	background-color: #AFBBE3;
+	border-color: #AFBBE3;
+	color: #303030;
+	transition: 0.4s;
+}
+
+.nine:hover {
+	background-color: #AFBBE3;
+	border-color: #AFBBE3;
+	color: #303030;
+	transition: 0.4s;
+}
+
