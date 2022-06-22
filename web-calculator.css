@@ -5,43 +5,62 @@
 	box-sizing: border-box;
 }
 
+html {
+	background-color: #303030;
+}
+
 .container {
-	/*padding: 30px;*/
-	/*border: 10px solid black;*/
+	padding: 20px;
+}
+
+.display {
+	padding: 30px;
+	margin-bottom: 5px;
+	background-color: #505050;
+	border: 5px solid red;
+	border-radius: 10px;
 }
 
 .row-one {
-	background-color: #282923;
-	/*padding: 30px;*/
+	
 }
 
-.row-one::after {
+/*.row-one::after {
 	content: "";
 	display: table;
 	clear: both;
 }
-
+*/
 .box {
+	border: 3px solid red;
+	border-radius: 10px;
 	float: left;
-	border: 5px solid red;
-	width: ‭33.33333%;
-	padding: 40px;
+	font-size: 40px;
+	padding: 20px;
+	width: calc(33.8% - 8px);
 }
 
-.one {
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine {
+	color: white;
 	text-align: center;
-	font-weight: bolder;
-	font-size: 40px;
 }
 
-.two {
-	text-align: center;
-	font-weight: bolder;
-	font-size: 40px;
+.one, .four, .seven {
+	margin-right: 2px;
 }
 
-.three {
-	text-align: center;
-	font-weight: bolder;
-	font-size: 40px;
+.two, .five, .eight {
+	margin: 0 2px;
+}
+
+.three, .six, .nine {
+	margin-left: 2px;
+}
+
+.four, .five, .six {
+	margin-top: 2px;
+}
+
+.seven, .eight, .nine {
+	margin-top: 2px;
 }
