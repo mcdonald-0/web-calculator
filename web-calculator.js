@@ -35,4 +35,16 @@ let calcDisplay = document.getElementById('display')
 	} ,false),
 	keyClear = document.getElementById('clear').addEventListener('click', function toDisplay() {
 		calcDisplay.textContent = '';
+	} ,false),
+	keyAdd = document.getElementById('addition').addEventListener('click', function toDisplay() {
+		calcDisplay.textContent += '+';
+	} ,false),
+	keySubtract = document.getElementById('subtraction').addEventListener('click', function toDisplay() {
+		calcDisplay.textContent += '-';
+	} ,false),
+	keyDivide = document.getElementById('division').addEventListener('click', function toDisplay() {
+		calcDisplay.textContent += '/';
+	} ,false),
+	keyMultiply = document.getElementById('multiplication').addEventListener('click', function toDisplay() {
+		calcDisplay.textContent += '*';
 	} ,false);

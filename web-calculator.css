@@ -46,6 +46,11 @@ html {
 	text-align: center;
 }
 
+.addition, .subtraction, .division, .multiplication {
+	color: white;
+	text-align: center;
+}
+
 /* This is to position the button side by side */
 /* .one, .four, .seven {
 	margin-right: 2px;
@@ -146,6 +151,34 @@ html {
 }
 
 .equals:hover {
+	background-color: #AFBBE3;
+	border-color: #AFBBE3;
+	color: #303030;
+	transition: 0.4s;
+}
+
+.addition:hover {
+	background-color: #AFBBE3;
+	border-color: #AFBBE3;
+	color: #303030;
+	transition: 0.4s;
+}
+
+.subtraction:hover {
+	background-color: #AFBBE3;
+	border-color: #AFBBE3;
+	color: #303030;
+	transition: 0.4s;
+}
+
+.division:hover {
+	background-color: #AFBBE3;
+	border-color: #AFBBE3;
+	color: #303030;
+	transition: 0.4s;
+}
+
+.multiplication:hover {
 	background-color: #AFBBE3;
 	border-color: #AFBBE3;
 	color: #303030;
