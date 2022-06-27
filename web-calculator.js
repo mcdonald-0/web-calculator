@@ -26,4 +26,13 @@ let calcDisplay = document.getElementById('display')
 	} ,false),
 	keyNine = document.getElementById('nine').addEventListener('click', function toDisplay() {
 		calcDisplay.textContent += 9;
+	} ,false),
+	keyZero = document.getElementById('zero').addEventListener('click', function toDisplay() {
+		calcDisplay.textContent += 0;
+	} ,false),
+	keyEquals = document.getElementById('equals').addEventListener('click', function toDisplay() {
+		calcDisplay.textContent += '=';
+	} ,false),
+	keyClear = document.getElementById('clear').addEventListener('click', function toDisplay() {
+		calcDisplay.textContent = '';
 	} ,false);
