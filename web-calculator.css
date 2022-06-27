@@ -28,7 +28,7 @@ html {
 }
 
 .box {
-	border: 3px solid lightgrey;
+	/* border: 3px solid lightgrey; */
 	border-radius: 10px;
 	float: left;
 	font-size: 40px;
@@ -52,26 +52,34 @@ html {
 }
 
 /* This is to position the button side by side */
-/* .one, .four, .seven {
+.one, .four, .seven, .addition {
 	margin-right: 2px;
 }
 
-.two, .five, .eight {
+.two, .five, .eight, .subtraction {
 	margin: 0 2px;
 }
 
-.three, .six, .nine {
+.three, .six, .nine, .division {
+	margin: 0 2px;
+}
+
+.zero, .equals, .clear, .multiplication {
 	margin-left: 2px;
-} */
+}
 
 /* To position the buttons under each other */
-/* .four, .five, .six {
+.four, .five, .six, .equals {
 	margin-top: 4px;
 }
 
-.seven, .eight, .nine {
+.seven, .eight, .nine, .clear {
 	margin-top: 4px;
-} */
+}
+
+.addition, .subtraction, .division, .multiplication {
+	margin-top: 4px;
+}
 
 .one:hover {
 	background-color: #AFBBE3;

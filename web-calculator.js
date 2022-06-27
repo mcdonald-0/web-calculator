@@ -1,6 +1,8 @@
-let calcDisplay = document.getElementById('display')
+let calcDisplay = document.getElementById('display');
 	// container = document.getElementById('container').addEventListener('click', checkKeyPress ,false),
-	keyOne = document.getElementById('one').addEventListener('click', function toDisplay() {
+
+
+let keyOne = document.getElementById('one').addEventListener('click', function toDisplay() {
 		calcDisplay.textContent += 1;
 	} ,false),
 	keyTwo = document.getElementById('two').addEventListener('click', function toDisplay() {
@@ -37,14 +39,38 @@ let calcDisplay = document.getElementById('display')
 		calcDisplay.textContent = '';
 	} ,false),
 	keyAdd = document.getElementById('addition').addEventListener('click', function toDisplay() {
-		calcDisplay.textContent += '+';
+		if (calcDisplay.textContent.length >= 1) {
+			calcDisplay.textContent += '+';
+		} else {
+			// TODO: I need to make sure that when a user clicks a key when there is nothing on the screen, it would show a warning, maybe a red color
+			calcDisplay.textContent = '';
+		}
 	} ,false),
+	// TODO: There is a bug here that makes the subtraction button quite inefficient. 
 	keySubtract = document.getElementById('subtraction').addEventListener('click', function toDisplay() {
-		calcDisplay.textContent += '-';
+		if (calcDisplay.textContent === '-') {
+			console.log('hello');
+		} else {
+			calcDisplay.textContent = '-';
+		}
 	} ,false),
 	keyDivide = document.getElementById('division').addEventListener('click', function toDisplay() {
-		calcDisplay.textContent += '/';
+		if (calcDisplay.textContent.length >= 1) {
+			calcDisplay.textContent += '/';
+		} else {
+			calcDisplay.textContent = '';
+		}
 	} ,false),
 	keyMultiply = document.getElementById('multiplication').addEventListener('click', function toDisplay() {
-		calcDisplay.textContent += '*';
+		if (calcDisplay.textContent.length >= 1) {
+			calcDisplay.textContent += '*';
+		} else {
+			calcDisplay.textContent = '';
+		}
 	} ,false);
+
+
+
+	if (calcDisplay.textContent.length >= 1) {
+		calcDisplay.textContent = "Text entered";
+	}
