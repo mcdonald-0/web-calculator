@@ -46,12 +46,11 @@ let keyOne = document.getElementById('one').addEventListener('click', function t
 			calcDisplay.textContent = '';
 		}
 	} ,false),
-	// TODO: There is a bug here that makes the subtraction button quite inefficient. 
 	keySubtract = document.getElementById('subtraction').addEventListener('click', function toDisplay() {
-		if (calcDisplay.textContent === '-') {
-			console.log('hello');
+		if (calcDisplay.textContent.indexOf('-') === -1) {
+			calcDisplay.textContent += '-'
 		} else {
-			calcDisplay.textContent = '-';
+			calcDisplay.textContent = '';
 		}
 	} ,false),
 	keyDivide = document.getElementById('division').addEventListener('click', function toDisplay() {
